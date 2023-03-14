@@ -20,13 +20,25 @@ read -r c
 # return 1 if false, return 0 if true
 
 echo $((a!=b))          
-
+echo $((a==b))
 # echo $(($a -lt $b))
 
+# Less than and greater than
 if [ $a -lt $b ] 
 then
     echo "a less than b"
 elif [ $a -gt $b ] 
 then
     echo "a is greater"
+fi
+
+# OR operator
+if [ $a -lt $b -o $a -eq $b ];then
+    echo "$a is greater than or equal to $b"
+fi
+
+
+# AND operator
+if [ $a -gt $b ] && [ $a -lt $c ];then
+    echo "a is intermediary value"
 fi
