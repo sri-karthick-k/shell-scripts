@@ -34,11 +34,18 @@ fi
 
 # OR operator
 if [ $a -lt $b -o $a -eq $b ];then
-    echo "$a is greater than or equal to $b"
+    echo "$a is less than or equal to $b"
 fi
 
 
 # AND operator
-if [ $a -gt $b ] && [ $a -lt $c ];then
+if [ $a -gt $b -a $a -lt $c ];then
     echo "a is intermediary value"
 fi
+
+if test $a != 1 -a $a > 1; then
+    echo "$a is greater than 0"
+fi
+
+
+if [ -n "$a" ] && echo "$a is true"
