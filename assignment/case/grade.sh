@@ -9,6 +9,3 @@ case $marks in
 [3-4][0-9]) echo "Third class";;
 [0-3][0-9]) echo "Fail";;
 esac
-
-
-# echo `test $marks > 0`
