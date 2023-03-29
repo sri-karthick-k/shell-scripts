@@ -1,0 +1,14 @@
+
+  command       std i/p		std o/p
+   mkdir                          no       
+   rmdir                          no
+    cp            yes             no
+    rm            yes             no
+    ls            no              yes
+    pwd           no              yes
+    who           no              yes
+    lp            yes             no
+    lpr           yes             no
+    cat           yes             yes
+     bc           yes             yes
+    wc            yes             yes
